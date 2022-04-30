@@ -1,0 +1,123 @@
+body {
+  background-image: url(images.png);
+  background-repeat: repeat;
+  background-position: top left;
+  border: solid 4px;
+  border-color: white;
+}
+
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: #cccccc;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+main{
+
+}
+header{
+  background: rgb(145,152,152);
+  background: linear-gradient(0deg, rgba(145,152,152,1) 0%, rgba(0,0,0,1) 100%);
+color: #BFB7B7;
+text-align: center;
+text-transform: uppercase;
+grid-column: span 12;
+margin-bottom: 0px;
+border: solid 2px;
+border-color: black;
+}
+nav{
+grid-column: span 12;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-column-gap: 24px;
+}
+nav ul{
+text-align: center;
+list-style: none;
+grid-column: span 12;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-column-gap: 24px;
+}
+li{
+
+grid-column: span 3;
+}
+nav li a{
+color: #BFB7B7;
+text-align: center;
+text-transform: uppercase;
+display: block;
+background-color: white;
+border: solid 2px;
+border-color: black;
+margin-top: 0px;
+margin-bottom:48px;
+padding: 12px;
+text-decoration: none;
+background: rgb(145,152,152);
+background: linear-gradient(0deg, rgba(145,152,152,1) 0%, rgba(80,79,79,1) 98%);
+border-radius: 10px;
+ transition: background-color .5s, color .5s;
+}
+nav li a:hover {
+  color: black;
+  background: rgb(80,79,79);
+  background: linear-gradient(0deg, rgba(80,79,79,1) 0%, rgba(145,152,152,1) 100%);
+   transition: background-color .0s, color .0s;
+}
+nav li a:active {
+color: #41b04c;
+background: rgb(23,24,24);
+background: linear-gradient(0deg, rgba(23,24,24,1) 56%, rgba(108,99,99,1) 91%);
+}
+li{
+grid-column: span 3;
+}
+main{
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+form{
+grid-column: span 12;
+padding:24px;
+border-top:solid 2px;
+border-left: solid 2px;
+border-top-left-radius: 10px;
+box-shadow: 10px 10px 10px #41b04c;
+}
+footer{
+grid-column: span 12;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-column-gap: 24px;
+text-align: center;
+}
+#copyright{
+  font-family:sans-serif;
+  font-style: italic;
+  font-size: 10px;
+border-top: solid 2px;
+margin-top: 48px;
+grid-column: span 12;
+}
+footer a{
+background: none;
+color: white;
+text-decoration: none;
+font-size: 48px;
+grid-column: span 3;
+}
+
+footer a:active{
+color:#41b04c;
+background: none;
+}
